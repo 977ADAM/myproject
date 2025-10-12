@@ -116,9 +116,8 @@
     <div id="mobileMenu" class="mobile-menu fixed top-0 left-0 w-80 h-full bg-white z-50 md:hidden shadow-lg">
         <div class="p-6">
             <div class="flex justify-between items-center mb-8">
-                <h2 class="text-lg font-bold tracking-tight">
-                    ENFANTS RICHES <br>
-                    DÉPRIMÉS
+                <h2 class="text-lg font-bold tracking-tight text-left">
+                    FEAR OF GOD
                 </h2>   
                 <button id="closeMenu" class="hamburger active">
                     <span></span>
@@ -148,7 +147,10 @@
             
             <div class="mt-8 space-y-4">
                 <a href="#" class="block text-sm font-medium text-gray-900 hover:text-gray-700 py-2">SEARCH</a>
-                <a href="#" 
+                <a href="{% url 'users:profile' %}" 
+                hx-get="{% url 'users:profile' %}" 
+                hx-target="#main-content" 
+                hx-push-url="true" 
                 class="text-sm font-medium text-gray-900 uppercase hover:text-gray-600">
                     ACCOUNT
                 </a>
@@ -174,9 +176,8 @@
                        hx-get="{% url 'main:index' %}" 
                        hx-target="#main-content" 
                        hx-push-url="true">
-                        <h1 class="text-sm sm:text-lg font-bold tracking-tight text-center">
-                            ENFANTS RICHES <br>
-                            DÉPRIMÉS
+                        <h1 class="text-sm sm:text-lg font-bold tracking-tight text-left">
+                            FEAR OF GOD
                         </h1>
                     </a>
                 </div>
@@ -205,7 +206,10 @@
                             SEARCH
                         </button>
                     </div>
-                    <a href="№" 
+                    <a href="{% url 'users:profile' %}" 
+                    hx-get="{% url 'users:profile' %}" 
+                    hx-target="#main-content" 
+                    hx-push-url="true"
                     class="text-sm font-medium text-gray-900 uppercase hover:text-gray-600">
                         ACCOUNT
                     </a>
@@ -231,7 +235,7 @@
         <main class="mx-auto px-4 sm:px-6 lg:px-8 py-8">
             <div class="text-center py-20">
                 <h2 class="text-4xl font-bold tracking-tight text-gray-900 mb-4">
-                    ENFANTS RICHES DÉPRIMÉS
+                    FEAR OF GOD
                 </h2>
                 <p class="text-lg text-gray-600 mb-8">
                     Select a category to browse our collection
